@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+ html{
+    scroll-behavior: smooth;
+ }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    
+}
+
+h1{ font-size: 2.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 1.2em;}
+p{ font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(95, 10, 81, 0.5);
+    box-shadow: 2px 2px 8px  rgba(31, 3, 28, 0.5);
+    color: white;
+    background-color: blueviolet;
+
+}
+
+button:hover{
+    background-color: rgb(55, 3, 104);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+header{
+    background-color: rgb(230, 230, 230);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;    
+}
+
+header a{
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    column-rule-color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vw;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.5em;
+}
+
+
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+
+
+}
+
+#nuestros-programas .container{
+    padding: 100px 0px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 2.7em;
+}
+#nuestros-programas h3{
+    margin: 15px 30px;
+    font-size: 1.4em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+
+.carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("media/front-end.jpg");
+    
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/back-end.jpg") ;
+    
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("media/pythom.jpg");
+    
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 150px 0px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    height: 80vw;
+}
+
+#final h2{
+    font-size: 7vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer .container{
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (min-width: 600px){
+    header{
+        position: fixed ;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;        
+    }
+
+    #hero{
+        height: 55vw;
+    }
+
+    #hero h1{
+        font-size: 3.5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(230, 230, 230);
+        height: 70vw;
+
+    }
+
+     #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+
+     #somso-proya h2{
+         margin-top: 0;
+     }
+
+    #somos-proya .img-container{
+        background-image: url("media/Jojos.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position:center; */
+        background-position-y: 0px ;
+        width: 300px;
+        height: 400px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        margin-bottom: 20px;
+        
+
+    }
+
+    #nuestros-programas h2{
+        font-size: 2.5em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+        margin: 30px 0px;
+        align-items: center;
+
+    }
+    .carta{
+        padding: 30px;
+        background-color: rgb(39, 33, 33);
+        background-size: 100% 100px ;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+        
+    }
+
+    .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("media/front-end.jpg");
+    
+    
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/back-end.jpg") ;
+        
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        , url("media/pythom.jpg");
+        
+    }
+    #caracteristicas{
+    background-image: url("media/caracteristicas.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 425px;
+    background-position: calc(100vw - 350px) 15px;
+    background-color: rgba(230, 230, 230);
+    
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        
+    }
+
+    #caratereisticas ul{
+        margin-left: 200px;
+        margin-right: 50px;
+    }
+
+    #final{
+        height: 25vw;
+        
+    }
+
+    #final h2{
+        font-size: 3em;
+        
+    }
+
+    #final  button{
+        font-size: 1em;
+    }
+
+    footer .container{
+        justify-content: right;
+        font-size: 10px;
+        height: 5%;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}

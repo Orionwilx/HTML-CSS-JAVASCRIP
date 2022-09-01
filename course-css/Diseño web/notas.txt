@@ -1,0 +1,212 @@
+CSS3
+
+
+Selectores
+
+universal
+
+*{	este es el selector universal para todo en css
+}
+
+tipo
+
+h1
+h2
+section
+etc
+
+
+normalize css es un documento en la web para estandarizar todos los
+estilos y asi hacer que se vea bein en todos los ordenadores y navegadores
+
+padding 	es el espacio que hay entre los bordes de la caja y el
+top-arriba		contenido
+ritgh-derecha	
+left-izquierda
+buttom-abajo
+
+Propiedades de texto
+
+font-size   este el tamaño de la letra
+font-family	esta es la tipografia
+line-height     si se le da otro valor ocupa el tamaño x el tamaño de la letra
+font-weigth	este controla el grosor de las letras
+
+margin 		es la distacia 		que hay entre cajas
+margin 0px auto		auto centra las cosas dentro de la caja
+
+outline 	son las lineas exteriores pero que no ocupa espacio
+
+position 	
+	Static
+		este es valor por defecto que tienen todas las cajas por
+		default es como si no estuviera pocisionado
+	relative
+		para pocisionar el elemento, agerega propiedades nuevas
+
+	z-index   este sirve para pocisionar antes o despues segun el
+		valor que se le de.
+
+		tiene un conflinto entre padres e hijos
+	
+	absolute
+		esta agrega la propiedad de "opacity" y funciona 
+		de 0 a 1. 
+		con el absolud la cja se ajusta al contenido esto no
+		pasa con el relative 
+
+	fixed
+		fixed es igual que absolud solo que se queda fijado
+
+	sticky
+		este es una mezcla netre relative y fixed
+		se comporta como un fixed en el momento en 
+		se le encuentre mientras se hace scroll
+
+
+Display
+
+ block 	de manera en bloque osea que opcupa todo el espacio
+ inlane	de manera de linea osea que no ocupa todo si no el contenido	 
+
+inline-block
+
+ la diferencia de un block con el inline me perimite dimencionar la  caja
+
+table
+
+para que se comporte como tabla
+
+inline-table
+
+para que se compote como tabla en linea
+
+list-item
+
+
+table-cell
+
+se compota como una celda de una tabla 
+
+
+overflow   sirve para que el contenido no sobresalga por medio del scroll
+
+
+los psudo-elementos
+
+
+
+::first-line    |  block
+::first-letter  |  block
+ 
+object-fit: fil
+			contain
+				este es el que viene por defecto y lo que hace es que se ajuste al contenido osea se ajusta de forma original resolucion pero  dentro del contenerdor
+			cover
+				esta es para ajustar al container pero que se vea de la mejor claidad recordando los bordes
+			none
+				le importa un carajo y la mete como le da la gana siempre con la resolucion real
+			Scale-down
+				se queda con la mejor propiedad en la es cala de baja si contai en mas pequeño se que none se queda con contain peero si none es mas pequeña se queda con none
+
+ cursor  
+ 		esto lo que hace es que el cursor cambie cuando esta sobre algun elemento
+
+ 		https://aprende-web.net/css/css9_1.php lista de cursores
+
+ color 
+
+ 		colornamme
+ 		haxadecinal
+ 			#f(red)f(green)f(blue) 3 dijitos
+
+ 			#f(red)f(green)f(blue)f(alpha) 4 dijitos
+
+ 			#ff(red)ff(green)ff(blue) 6 dijitos
+
+ 			#ff(red)ff(green)ff(blue)ff(alpha) 8 dijitos
+
+ 			#ffffff ejemplo
+ 		rgb
+ 			(RGB  Red,Green,Blue)
+ 			rgb(0,0,0)
+ 		rgba
+ 			(RGBA  Red,Green,Blue,Alpha(Opacidad))
+ 			reba(0,0,0,0)
+
+Resposive desing - mobile first
+
+@media only screen and(max-width 800px)
+
+esto sirve para comezar con el estilizado de mobile o tabled estableciendo un ancho de resolucion
+
+
+
+Meta view port
+
+Cuando no se pone el view port es como el de un escritorio pero alargado por eso es tan importante su uso 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+flex box 
+
+con esto ajustamos el contenido al contenedor pero solo funciona sus hijos directos 
+
+flex-direction
+
+esta sirve para ubicar el los eje axie por ejemplo en el eje (Y) o eje 
+(x)
+
+flex-wrap 
+
+con esto respeta las dimeciones estipuladas y se mueven apra respetar 
+
+flex-flow
+
+es la combinacion de de direction y wrap en una sola 
+
+justify-conten  
+
+funciona para controlar los margenes de todos los hijos de un container
+
+
+
+
+
+.....
+
+
+FLEX GROW
+
+flex-grow: 1
+
+esta propiedad sirve para hacer flecibe el tamaño de las cajas y el espacio en blanco sobrante se reparta entre todas las cajas en la direccion asignada pero respetando el tamaño asignado menos de ese tamaño no es flexible.
+
+esta propiedad repartira el espacio en blanco restante a quien se le asigne si se asigna en el container la repartira a todas por igual de otro modo se reparte el espacio sobrtante a la caja asignada pero si se le quiere asignar a 3 cajas distintas simplemetne se le asigna la propiedad a las que se quiere 
+
+el numero que se le agrega a la propiedad controla el espacio divivido si se le agrega "x" el espacio sobrante se transformara en la suma de todos los numeros "x" asignados
+
+
+FLEX BASIS
+
+flex-basis: 200px
+
+Esta propiedad es el width de los flex por lo tanto tambien tiene mas relevancaia que width esta mas alto jerarquicamente
+
+
+FLEX SHRINK
+
+flex-shrink:1 
+
+esta propiedad permite que una caja ceda cantidad de espacio cuando haga falta, "x" cantidad de veces mayor que las demas que no tienen la propiedad
+
+FLEX 
+
+flex: 1
+
+Esta propiedadson 3 propiedades agrupadas en una son
+flex-grow, flex shrink, flex-basis
+
+ORDER
+
+Order es como un z-index pero en el eje que apunta en el main axis esto es igual aunz-index pero aplicado a cualquier lugar apuntao en el plano cartesiano (esto es para el flex)

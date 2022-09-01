@@ -1,0 +1,169 @@
+Course 3 hours
+
+Coceptos basicos sintaxy
+
+Etiquetas: Dos tipos de etiquetas las que se abres y no se cierran y 
+las que se abren y se cierran.
+ej: <br> // <h1></h1>
+
+TAGS
+
+<!DOCTYPE html> Esta etiquta sirve para decirle al programa que es la ultima version de html
+
+<html></html> Aqui esta todo lo que hay en la pagina lo que podemos ver y lo que no podemos ver
+
+<head></head> Aqui va todo lo que no se puede ver como el titulo de la pestaña los enlaces a los estilos etc
+
+<body></body> Aqui se pone todo lo visualmente posible de la pagina como titulos informnacion imagenes videos etc
+
+<title></title> Esta es para poner el titulo en la pesta;a y va dentro del head
+
+<h1></h1> Esta es una cajita para titulos y van de <h1></h1> a <h6></h6>
+
+<p></p> Esta etiqueta es para un parrafo
+
+<b></b>  Esta es para negritas
+
+<i></i> Esta es para ponerla en italica
+
+<strike></> Esta es tachada
+ 
+<small></small> Para ponerla chiquita
+
+<br></br> esto es un salto de linea (Son acumulables)
+
+
+Enlaces
+
+ 
+Distintos tipos de rutas: locales y no locales. las locales son las que estan dentro de nuestro servidor 
+y las no locales que son paginas webs 
+
+locales
+
+<a href="Pagina2.htlm"></a> Esta etiqueta es para redireccionar a otro enlace
+
+Formas de navegar entre carpetas
+
+href="carpeta/Pagina2.html" ---> Para accerder a una carpeta
+href="../index.html" ---> Para regresar una carpeta
+
+no locales
+
+<a href="https://facebook.com"></a> Esta etiqueta es para redireccionar a un link
+
+Atributos
+
+href     Este atributo es para enlazar links archivos locales 
+
+target    ("_BLANK")Esta es para abrir el enlace a otra pagina 
+
+Hasta aqui llegue en el video del curso de html5 con una duracion de 1:01:02 de 2:24:35 saludos al wil del futuro
+__________________________________________________________________________________
+
+Listas
+
+
+Listas desordenadas
+
+<ul></ul> Este tipo de lista es desordenada y todo lo que pongamos dentro se mostrar con una lista sin numeracion
+
+<li></li> Con esta etiquesa se rellenan la listas
+
+Listas ordenadas
+
+<ol></ol> Este tipo de lista ennumra las cosas que pongasmos dentro de ella
+
+
+
+Multimedia
+
+
+<img src""> De esta forma se agrega una imagen 
+
+<video src" Aqui va el enlace " controls></video> De esta forma de agrega un video
+
+<audio " Aqui va el enlace " controls ></audio>
+
+(controls sirve par mostrar los controles del video reproducir, pausar, etc)
+
+
+
+Div
+
+
+Esta etiqueta sirve para separar y agrupar contenido sirve para tener una estructura solida y hacer que nuestro trabajop en css mas facil
+
+
+
+Formularios
+
+
+<form></form> Esta etiqueta es para crear formularios
+
+<input type=" Aqui entra el dato del usuario " name=" Etiqueta para diferenciar entre inputs " ></input> Entrada de datos, esta recibe texto 
+
+inputs
+<input type="text"></input>                Tipo de texto
+<input type="password"></input>            Tipo de contrasena
+<input type="number"></input>              Tipo de numeros
+<input type="email"></input>               Tipo de emails
+<input type="color"></input>               Tipo de Color
+<input type="range" min="" max=""></input> Tipo de barra para establecer en un rango
+<input type="date"></input>                Tipo de fecha
+<input type="time"></input>                Tipo de tiempo
+<input type="button" value="boton" ></input>    Tipo de boton  
+<input type="submit" value=""></input>		   Tipo de boton de enviar
+
+<textarea readonly=""></textarea> es un campo con resolucion editable, que tambien funciona como input
+
+atributos
+
+value=""     Propiedad del campo
+required=""  Hace que un campo sea obligatorio
+readonly=""  Hace que solo se pueda leer mas no editar el campo
+
+
+
+MetaDatos
+
+
+<meta charset="utf-8"> informacion que describe informacion de un objeto, son recursos
+
+<meta name="keyword" content="harina,leche,huevos"> Este sirve par el poscionamiento de la pagina en los buscadores como palaras claves para encontrar o mostrar nuestra pagina
+
+
+
+atributos
+
+charset="utf-8" Este atrubuto es para captar mas caracteres especiales que html no puede procesar como acentos y caracteres especiales
+
+name=""   esto para defiinir el tipo de meta
+name="keyword" este el tipo para las palabras claves
+name="description" esta es para definir la descripcion
+name="autor"  esta es para declara el autor de la pagina
+name="copyright" en caso de copyright se pone el el dueño del contenido 
+name="robots" espara indesar una pagina
+ 
+content=""  contenido del tipo
+ 
+
+
+
+
+
+
+ __________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
